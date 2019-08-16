@@ -1,0 +1,75 @@
+// Specific CSS for your home-page
+.parent {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  }
+
+  @media (max-width: 1200px) {
+    .parent {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-column-gap: 20px;
+      grid-row-gap: 20px;
+      }
+
+  }
+
+  @media (max-width: 800px) {
+    .parent {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 20px;
+      grid-row-gap: 20px;
+      }
+  }
+
+  @media (max-width: 500px) {
+    .parent {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-column-gap: 20px;
+      grid-row-gap: 20px;
+      }
+  }
+
+  .card-category {
+    background-size: cover;
+    background-position: 0 830px;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.tabs-underlined {
+  display: flex;
+  align-items: center;
+}
+
+.tabs-underlined .tab-underlined {
+  color: black;
+  padding: 8px;
+  margin: 8px 16px;
+  opacity: .4;
+  cursor: pointer;
+  text-decoration: none;
+  border-bottom: 4px solid transparent;
+}
+
+.tabs-underlined .tab-underlined.active {
+  opacity: 1;
+  border-bottom: 3px solid #555555;
+}
+
+.tabs-underlined .tab-underlined:hover {
+  opacity: 1;
+  border-bottom: 3px solid #555555;
+}

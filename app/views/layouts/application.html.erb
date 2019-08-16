@@ -1,15 +1,40 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>RailsMisterCocktailv2</title>
+    <title>RailsMisterCocktail</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   </head>
 
   <body>
+
+    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.unsplash.com/photo-1544196083-7ec529d01555?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80)">
+      <h1>Cocktails</h1>
+    </div>
+
+    <div class="container mt-5">
+    <ul class="list-inline tabs-underlined">
+      <li>
+        <a href="http://localhost:3000/cocktails" class="tab-underlined">Home</a>
+      </li>
+      <li>
+        <a href="http://localhost:3000/cocktails/new" class="tab-underlined">Create a Cocktails</a>
+      </li>
+    </ul>
+    </div>
+
+
+    <div class="container mt-5">
     <%= yield %>
+    </div>
+
+    <%= javascript_include_tag "application" %> <!-- from app/assets/javascripts/application.js -->
+    <%= javascript_pack_tag "application" %>    <!-- from app/javascript/packs/application.js -->
   </body>
 </html>

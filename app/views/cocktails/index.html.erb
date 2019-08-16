@@ -1,0 +1,19 @@
+
+  <div class="parent">
+    <% @cocktails.each do |cocktail| %>
+      <div class="card-cocktail ">
+        <img src="https://ns328286.ip-37-187-113.eu/ew/wallpapers/800x480/11344_800x480.jpg" alt="">
+        <div class="card-cocktail-infos">
+          <h2><%= link_to cocktail.name.capitalize , cocktail_path(cocktail) %>
+            </h2>
+
+          <h2>
+            <%= link_to "🗑", cocktail_path(cocktail),
+            method: :delete,
+            data: { confirm: "Are you sure that you want to delete it ?" } %>
+            </h2>
+        </div>
+      </div>
+    <% end %>
+  </div>
+
