@@ -21,7 +21,7 @@ class CocktailsController < ApplicationController
     @dose = Dose.new
   end
 
-  def destroy           # GET /cocktails/ne
+  def destroy          # GET /cocktails/ne
     @cocktail = Cocktail.find(params[:id])
     @cocktail.destroy
     redirect_to cocktails_path
@@ -30,6 +30,6 @@ class CocktailsController < ApplicationController
   private
 
   def cocktail_params
-    params.require(:cocktail).permit(:name)
+    params.require(:cocktail).permit(:name, :photo)
   end
 end

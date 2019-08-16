@@ -82,4 +82,4 @@ production:
   <<: *default
   database: rails-mister-cocktail_production
   username: rails-mister-cocktail
-  password: <%= ENV['RAILS-MISTER-COCKTAIL_DATABASE_PASSWORD'] %>
+  password: <%= ENV['RAILS-MISTER-COCKTAIL_DATABASE_PASSWORD'] %>Mi
