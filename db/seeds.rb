@@ -8,11 +8,11 @@
 
 puts 'Cleaning database...'
 Ingredient.destroy_all
+Dose.destroy_all
+Cocktail.destroy_all
 
-puts 'Creating 3 ingredients...'
+puts 'Creating 1 cocktail...'
 
-Ingredient.create(name: "lemon")
-Ingredient.create(name: "ice")
-Ingredient.create(name: "mint leaves")
+Cocktail.create(name: "Julieno", photo: "image/upload/v1565962786/alsdjekup0x8ujtqveci.jpg")
 
 puts 'Finished!'
