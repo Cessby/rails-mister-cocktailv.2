@@ -11,8 +11,8 @@ Ingredient.destroy_all
 Dose.destroy_all
 Cocktail.destroy_all
 
-puts 'Creating 1 cocktail...'
+# puts 'Creating 1 Cocktail...'
+# Cocktail.create(name: "White Russian", photo: "https://res.cloudinary.com/ddowsww0o/image/upload/v1565967351/tpoiwlemhftemplobua4.jpg")
 
-Cocktail.create(name: "Julieno", photo: "image/upload/v1565962786/alsdjekup0x8ujtqveci.jpg")
 
 puts 'Finished!'

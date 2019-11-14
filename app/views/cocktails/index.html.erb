@@ -2,7 +2,7 @@
   <div class="parent">
     <% @cocktails.each do |cocktail| %>
       <div class="card-cocktail">
-        <%= cl_image_tag cocktail.photo, height: 300, width: 400, crop: :fill %>
+        <%= cl_image_tag cocktail.photo, crop: :fit %>
         <div class="card-cocktail-infos">
           <h2><%= link_to cocktail.name.capitalize , cocktail_path(cocktail) %>
             </h2>
